@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script sets up a listener on localhost, port 98
+
+nc -lk 127.0.0.1 98
