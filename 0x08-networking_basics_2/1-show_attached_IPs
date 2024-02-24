@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays all active IPv4 addresses on the machine
+
+# List all IP addresses (IPv4 and IPv6), then filter out IPv4 addresses
+# We are looking for lines that contain 'inet' but not 'inet6'
+# Then we use awk to print the second field (the IP address) and remove the netmask part
+ip -4 addr | grep 'inet' | awk '{print $2}' | cut -d'/' -f1
