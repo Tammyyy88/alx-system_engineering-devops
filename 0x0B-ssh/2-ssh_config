@@ -1,0 +1,7 @@
+# SSH Config File
+#
+Host web-01
+	Hostname 107.22.146.18
+	User ubuntu
+	PasswordAuthentication no
+	IdentityFile ~/alx-system_engineering-devops/0x0B-ssh/school
