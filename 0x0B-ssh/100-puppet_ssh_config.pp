@@ -13,6 +13,6 @@ file line { 'Turn off passwd auth':
 
 file line { 'Declare identity file':
 	path => '~/alx-system_engineering-devops/0x0B-ssh/2-ssh_config',
-        line => 'IdentityFile ~/.ssh/school',
+        line => 'IdentityFile ~/alx-system_engineering-devops/0x0B-ssh/school',
         match => '^#IdentityFile',
 }
